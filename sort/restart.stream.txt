@@ -21,8 +21,6 @@ br
 canwat
 cd
 cda
-cell_gradient_coef_x
-cell_gradient_coef_y
 ch
 chklowq
 chs
@@ -200,7 +198,6 @@ rvblten
 rvcuten
 rw
 rw_p
-scalars
 seaice
 sfc_albbck
 sfc_albedo

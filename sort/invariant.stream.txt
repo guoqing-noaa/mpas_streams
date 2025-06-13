@@ -5,8 +5,6 @@ areaTriangle
 bdyMaskCell
 bdyMaskEdge
 bdyMaskVertex
-cell_gradient_coef_x
-cell_gradient_coef_y
 cellsOnCell
 cellsOnCellsOnCell
 cellsOnEdge
