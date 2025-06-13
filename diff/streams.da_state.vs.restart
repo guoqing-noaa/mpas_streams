@@ -17,7 +17,6 @@ acswupb
 acswupbc
 acswupt
 acswuptc
-albedo12m
 br
 canwat
 cd
@@ -29,7 +28,6 @@ chs2
 circulation
 ck
 cka
-cldfrac
 cldfrac_bl
 cldfrac_cu
 cov
@@ -67,7 +65,6 @@ glw
 graupelnc
 graupelncv
 grdflx
-greenfrac
 gsw
 gz1oz0
 hfx
@@ -95,22 +92,17 @@ i_acswuptc
 initial_time
 i_rainc
 i_rainnc
-isice_lu
-isltyp
-iswater_lu
-ivgtyp
 k22_shallow
 kbcon_shallow
 kpbl
 ktop_deep
 ktop_shallow
 lai
-lai12m
-landmask
-landusef
 lh
 mavail
-mminlu
+max_hail_diameter_column
+max_hail_diameter_sfc
+max_hail_diameter_sfc_acc
 mol
 mu_c
 nca
@@ -124,7 +116,6 @@ o3clim
 o3vmr
 potevp
 precipfr
-precipw
 pressure_base
 pressure_p
 psih
@@ -143,6 +134,7 @@ qsfc
 qsg
 qsq
 qvg
+qv_init
 rainc
 raincv
 rainnc
@@ -214,9 +206,8 @@ sfc_emiss
 sfcrunoff
 sh2o
 sh3d
-shdmax
-shdmin
 sigma_deep
+sigma_deep_far
 skintemp
 sm3d
 smcrel
@@ -224,7 +215,6 @@ smfr3d
 smois
 smstav
 smstot
-snoalb
 snopcx
 snotime
 snow
@@ -233,7 +223,6 @@ snowfallac
 snowh
 snownc
 snowncv
-soilf
 soilt1
 sr
 sst
@@ -250,13 +239,13 @@ surface_pressure
 t2m
 tday_accum
 tend_sfc_pressure
-ter
 th2m
 thc
 theta
 theta_base
 theta_m
 Time
+t_init
 tke_pbl
 tlag
 tmn
@@ -271,6 +260,7 @@ tyear_mean
 u
 u10
 udrunoff
+u_init
 uReconstructMeridional
 uReconstructZonal
 ust
@@ -278,6 +268,7 @@ ustm
 v10
 vcpool
 vegfra
+v_init
 w
 w0avg
 wspd
