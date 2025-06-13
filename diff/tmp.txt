@@ -1,39 +1,70 @@
-<var name="cldfrac" type="real" dimensions="nVertLevels nCells Time" units="unitless"
-     description="horizontal cloud fraction"/>
-
-
-<var name="precipw" type="real" dimensions="nCells Time" units="kg m^{-2}"
-     description="precipitable water"/>
-
-<var name="ter" type="real" dimensions="nCells" units="m"
-     description="terrain height"/>
+<var name="tke_pbl" type="real" dimensions="nVertLevels nCells Time" units="m^{2} s^{-2}"                                                              
+     description="turbulent kinetic energy from PBL"
+     packages="bl_mynn_in;bl_myj_in"/>
 
 
 
-<var name="max_hail_diameter_column" type="real" dimensions="nCells Time" units="mm"
-     description="Maximum hail diameter in the vertical column"
-     packages="mp_tempo_in"/>
+<!-- ... GRELL-FREITAS ONLY: -->
+  <var name="vcpool" type="real" dimensions="nCells Time" units="m s^{-1}"                                                                                
+        description="Cold pool gust front horizontal speed "          
+        packages="cu_grell_freitas_in"/>
 
-<var name="max_hail_diameter_sfc" type="real" dimensions="nCells Time" units="mm"
-     description="Maximum hail diameter at the surface"
-     packages="mp_tempo_in"/>
+  <var name="xmb_total" type="real" dimensions="nCells Time" units="kg m^{-2} s^{-1}"
+        description="cloud-base mass flux"
+        packages="cu_grell_freitas_in"/>
+           
+  <var name="xmb_shallow" type="real" dimensions="nCells Time" units="kg m^{-2} s^{-1}"                                                                  
+        description="cloud base mass flux for shallow convection"
+        packages="cu_grell_freitas_in"/>
 
-<var name="max_hail_diameter_sfc_acc" type="real" dimensions="nCells Time" units="mm"
-     description="Maximum hail diameter at the surface accumulated over diagnostic output"
-     packages="mp_tempo_in"/>
+<!-- ... KAIN_FRITSCH ONLY: -->
+  <var name="nca" type="real" dimensions="nCells Time" units="s"
+       description="relaxation time for KF parameterization of convection"
+       packages="cu_kain_fritsch_in"/>
+          
+  <var name="w0avg" type="real" dimensions="nVertLevels nCells Time" units="m s^{-1}"                                                                    
+       description="time running-averaged vertical velocity"
+       packages="cu_kain_fritsch_in"/>
 
-var name="sigma_deep_far" type="real" dimensions="nCells Time" units="-"
-     description="Second gridpoint fractional coverage for deep convection"
-     packages="cu_grell_freitas_in"/>
 
-<var name="qv_init" type="real" dimensions="nVertLevels" units="kg kg^{-1}"
-     description="qv reference profile"/>
+<!-- YSU PBL SCHEME: -->
+  <var name="delta" type="real" dimensions="nCells Time" units="m"   
+       description="entrainment layer depth from PBL scheme"
+       packages="bl_ysu_in;bl_myj_in"/>                              
+          
+  <var name="wstar" type="real" dimensions="nCells Time" units="m s^{-1}"                                                                                
+       description="mixed velocity scale from PBL scheme"
+       packages="bl_ysu_in;bl_myj_in"/>
 
-<var name="u_init" type="real" dimensions="nVertLevels" units="m s^{-1}"
-     description="u reference profile"/>
+<!-- GRELL FREITAS LI -->
+  <var name="sub3d_rthcuten" type="real" dimensions="nVertLevels nCells Time" units="K s^{-1}"
+       description="tendency of potential temperature due to the subsidence created by cumulus convection"
+       packages="cu_grell_freitas_in;gf_sub3d"/>                     
+  
+  <var name="sub3d_rqvcuten" type="real" dimensions="nVertLevels nCells Time" units="kg kg^{-1} s^{-1}"                                                  
+       description="tendency of water vapor mixing ratio due to the subsidence created by cumulus convection"
+       packages="cu_grell_freitas_in;gf_sub3d"/>                     
+  
+  <var name="sub3d_rucuten" type="real" dimensions="nVertLevels nCells Time" units="m s^{-1} s^{-1}"                                                     
+       description="tendency of zonal wind due to the subsidence created by cumulus convection"
+       packages="cu_grell_freitas_in;gf_sub3d"/>                     
+  
+  <var name="sub3d_rvcuten" type="real" dimensions="nVertLevels nCells Time" units="m s^{-1} s^{-1}"                                                     
+       description="tendency of meridional wind due to the subsidence created by cumulus convection"
+       packages="cu_grell_freitas_in;gf_sub3d"/>
 
-<var name="v_init" type="real" dimensions="nVertLevels" units="m s^{-1}"
-     description="v reference profile"/>
+<!-- TIEDTKE AND GRELL -->
+  <var name="rqvdynten" type="real" dimensions="nVertLevels nCells Time" units="kg kg^{-1} s^{-1}"
+       description="tendency of water vapor due to horizontal and vertical advections"
+       packages="cu_grell_freitas_in;cu_ntiedtke_in"/>
 
-<var name="t_init" type="real" dimensions="nVertLevels nCells" units="K"
-     description="theta reference profile"/>
+  <var name="rucuten" type="real" dimensions="nVertLevels nCells Time" units="m s^{-1} s^{-1}"
+       description="tendency of zonal wind due to cumulus convection"
+       packages="cu_grell_freitas_in;cu_ntiedtke_in"/>
+
+  <var name="rvcuten" type="real" dimensions="nVertLevels nCells Time" units="m s^{-1} s^{-1}"
+       description="tendency of meridional wind due to cumulus convection"
+       packages="cu_grell_freitas_in;cu_ntiedtke_in"/>
+
+
+
