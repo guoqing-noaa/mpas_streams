@@ -41,7 +41,6 @@ delta
 det_qv
 det_thl
 dew
-diag_physics_noahmp
 dtaux3d
 dtauy3d
 dusfcg

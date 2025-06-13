@@ -62,7 +62,6 @@ deriv_two
 det_qv
 det_thl
 dew
-diag_physics_noahmp
 dss
 dtaux3d
 dtauy3d
