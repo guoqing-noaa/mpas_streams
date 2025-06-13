@@ -35,3 +35,19 @@ shdmax
 shdmin
 snoalb
 soilf
+
+
+13 scalars:
+qv
+qc
+qr
+qi
+qs
+qg
+ni
+nr
+ng
+nc
+nifa
+nwfa
+volg
