@@ -2,38 +2,38 @@
      description="horizontal cloud fraction"/>
 
 
-<var name="precipw" type="real" dimensions="nCells Time" units="kg m^{-2}"                                                                             
+<var name="precipw" type="real" dimensions="nCells Time" units="kg m^{-2}"
      description="precipitable water"/>
 
-<var name="ter" type="real" dimensions="nCells" units="m"                                                                                              
+<var name="ter" type="real" dimensions="nCells" units="m"
      description="terrain height"/>
 
 
 
-<var name="max_hail_diameter_column" type="real" dimensions="nCells Time" units="mm"                                                                   
+<var name="max_hail_diameter_column" type="real" dimensions="nCells Time" units="mm"
      description="Maximum hail diameter in the vertical column"
      packages="mp_tempo_in"/>
 
-<var name="max_hail_diameter_sfc" type="real" dimensions="nCells Time" units="mm"                                                                      
-     description="Maximum hail diameter at the surface"            
+<var name="max_hail_diameter_sfc" type="real" dimensions="nCells Time" units="mm"
+     description="Maximum hail diameter at the surface"
      packages="mp_tempo_in"/>
 
-<var name="max_hail_diameter_sfc_acc" type="real" dimensions="nCells Time" units="mm"                                                                  
-     description="Maximum hail diameter at the surface accumulated over diagnostic output"                                                             
+<var name="max_hail_diameter_sfc_acc" type="real" dimensions="nCells Time" units="mm"
+     description="Maximum hail diameter at the surface accumulated over diagnostic output"
      packages="mp_tempo_in"/>
 
-var name="sigma_deep_far" type="real" dimensions="nCells Time" units="-"                                                                               
+var name="sigma_deep_far" type="real" dimensions="nCells Time" units="-"
      description="Second gridpoint fractional coverage for deep convection"
      packages="cu_grell_freitas_in"/>
 
-<var name="qv_init" type="real" dimensions="nVertLevels" units="kg kg^{-1}"                                                                            
+<var name="qv_init" type="real" dimensions="nVertLevels" units="kg kg^{-1}"
      description="qv reference profile"/>
 
 <var name="u_init" type="real" dimensions="nVertLevels" units="m s^{-1}"
      description="u reference profile"/>
-        
+
 <var name="v_init" type="real" dimensions="nVertLevels" units="m s^{-1}"
      description="v reference profile"/>
-        
-<var name="t_init" type="real" dimensions="nVertLevels nCells" units="K"                                                                               
+
+<var name="t_init" type="real" dimensions="nVertLevels nCells" units="K"
      description="theta reference profile"/>
