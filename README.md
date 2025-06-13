@@ -1,5 +1,5 @@
 
-### Number of variables (excluding scalars)
+### 1. Number of variables (excluding scalars) in sorted txt file
 ```
    93 invariant.stream.txt
   294 da_state.stream.txt
@@ -10,7 +10,7 @@
   326 restart.nc.txt
 ```
 
-### variables in both invaraint and da_state:
+### 2. variables in both invaraint and da_state:
 ```
 cd sort
 comm -12 da_state.stream.txt invariant.stream.txt
@@ -33,7 +33,7 @@ snoalb
 soilf
 ```
 
-##### 13 scalars
+### 3. 13 scalars
 ```
 qv
 qc
