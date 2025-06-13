@@ -206,7 +206,6 @@ rvblten
 rvcuten
 rw
 rw_p
-scalars
 seaice
 sfc_albbck
 sfc_albedo
