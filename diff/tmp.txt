@@ -1,0 +1,47 @@
+<var name="albedo12m" type="real" dimensions="nMonths nCells" units="percent"
+     description="monthly-mean climatological surface albedo"/>
+
+<var name="cldfrac" type="real" dimensions="nVertLevels nCells Time" units="unitless"
+     description="horizontal cloud fraction"/>
+
+<var name="greenfrac" type="real" dimensions="nMonths nCells" units="percent"
+     description="monthly-mean climatological greenness fraction"/>
+
+<var name="isice_lu" name_in_code="isice" type="integer" dimensions="" units="unitless" default_value="24"
+     description="Index category for snow/ice"/>
+
+<var name="isltyp" type="integer" dimensions="nCells" units="unitless"
+     description="dominant soil category"/>
+
+<var name="iswater_lu" name_in_code="iswater" type="integer" dimensions="" units="unitless" default_value="16"
+     description="Index category for water"/>
+
+<var name="ivgtyp" type="integer" dimensions="nCells" units="unitless"
+     description="dominant vegetation category"/>
+
+<var name="lai12m" type="real" dimensions="nMonths nCells" units="unitless"
+     packages="lsm_ruc_in"
+     description="monthly-mean climatological leaf area index"/>
+
+<var name="landmask" type="integer"  dimensions="nCells" units="unitless"
+     description="land-ocean mask (1=land ; 0=ocean)"/>
+
+<var name="landusef" type="real" dimensions="nlcat nCells" units="unitless"
+     packages="lsm_ruc_in"
+     description="fraction of each vegetation category present"/>
+
+<var name="mminlu" type="text" dimensions="" units="unitless"
+     description="land use classification"/>
+
+<var name="shdmax" type="real" dimensions="nCells" units="percent"
+     description="maximum fractional coverage of annual green vegetation fraction"/>
+
+<var name="shdmin" type="real" dimensions="nCells" units="percent"
+     description="minimum fractional coverage of annual green vegetation fraction"/>
+
+<var name="snoalb" type="real"  dimensions="nCells" units="unitless"
+     description="annual maximum snow albedo"/>
+
+<var name="soilf" type="real" dimensions="nscat nCells" units="unitless"
+     packages="lsm_ruc_in"
+     description="fraction of each soil category present"/>
